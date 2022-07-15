@@ -7,8 +7,6 @@ public class HomeWork9_1 {
     public static void main(String[] args) {
         int ageFrom = 18;
         int ageTo = 23;
-        int age = (int) (ageFrom + Math.random() * ageTo);
-        System.out.println(age);
         int[] firstTeam = teamAge(ageFrom, ageTo, new int[25]);
         int[] secondTeam = teamAge(ageFrom, ageTo, new int[25]);
         System.out.println("First Team Age " + Arrays.toString(firstTeam));
