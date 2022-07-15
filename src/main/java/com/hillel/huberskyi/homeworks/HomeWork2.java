@@ -1,6 +1,6 @@
 package com.hillel.huberskyi.homeworks;
 
-public class Homework2 {
+public class HomeWork2 {
     public static void main(String[] args) {
         byte height = 5;
         byte width = 7;

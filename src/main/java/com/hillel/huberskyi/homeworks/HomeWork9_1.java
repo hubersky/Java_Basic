@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 public class HomeWork9_1 {
     public static void main(String[] args) {
         int ageFrom = 18;
-        int ageTo = 40;
+        int ageTo = 23;
         int age = (int) (ageFrom + Math.random() * ageTo);
         System.out.println(age);
         int[] firstTeam = teamAge(ageFrom, ageTo, new int[25]);
@@ -21,7 +21,7 @@ public class HomeWork9_1 {
     public static int[] teamAge(int ageFrom, int ageTo, int[] arrTeam) {
 
         for (int i = 0; i < arrTeam.length; i++) {
-            int age = (int) (ageFrom + Math.random() * ageTo);
+            int age = ageFrom + (int) (Math.random() * ageTo);
             arrTeam[i] = age;
         }
         return arrTeam;

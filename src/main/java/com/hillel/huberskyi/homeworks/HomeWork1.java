@@ -1,6 +1,6 @@
 package com.hillel.huberskyi.homeworks;
 
-public class Homework1 {
+public class HomeWork1 {
     public static void main(String[] args) {
         System.out.print("Hello my name is Volodymyr, ");
         System.out.println("and i like Hillel.");
