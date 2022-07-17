@@ -39,14 +39,18 @@ public class HomeWork10 {
 
     public static void coincidencesNumber(int[] guessedNumberOfCompany, int[] guessedNumberOfPlayer) {
         boolean num = false;
+        int count = 0;
         for (int i = 0; i < guessedNumberOfCompany.length; i++) {
             if (guessedNumberOfCompany[i] == guessedNumberOfPlayer[i]) {
                 num = true;
                 System.out.println("Совпал " + i + "й" + " элемент");
+                count++;
             }
         }
         if (!num){
             System.out.println("Нет совпадений");
+        }else {
+            System.out.println("Количество совпадений " + count);
         }
     }
 }
