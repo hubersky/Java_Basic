@@ -50,7 +50,7 @@ public class HomeWork10 {
         if (!num){
             System.out.println("Нет совпадений");
         }else {
-            System.out.println("Количество совпадений " + count);
+            System.out.println("Количество совпадений: " + count);
         }
     }
 }
