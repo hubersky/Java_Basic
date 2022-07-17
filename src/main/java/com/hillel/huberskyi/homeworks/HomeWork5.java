@@ -53,8 +53,10 @@ public class HomeWork5 {
     static void resultOfTeam(String fitsTeamName, String secondTeamName, int firstTeamValue, int secondTeamValue){
         if (firstTeamValue > secondTeamValue){
             System.out.println("The team won " + fitsTeamName + " scored " + firstTeamValue + " points");
-        }else {
+        }else if (firstTeamValue < secondTeamValue){
             System.out.println("The team won " + secondTeamName + " scored " + secondTeamValue + " points");
+        }else {
+            System.out.println("Draw");
         }
     }
 }
