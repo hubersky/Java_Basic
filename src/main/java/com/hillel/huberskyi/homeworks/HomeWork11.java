@@ -48,17 +48,17 @@ public class HomeWork11 {
 
     public static void printArr(int[][] beforeTranspose, int[][] afterTranspose) {
 
-        for (int i = 0; i < beforeTranspose.length; i++) {
-            for (int j = 0; j < beforeTranspose[i].length; j++) {
-                System.out.print(beforeTranspose[i][j] + " \t");
+        for (int[] ints : beforeTranspose) {
+            for (int anInt : ints) {
+                System.out.print(anInt + " \t");
             }
             System.out.println();
         }
         System.out.println();
 
-        for (int i = 0; i < afterTranspose.length; i++) {
-            for (int j = 0; j < afterTranspose[i].length; j++) {
-                System.out.print(afterTranspose[i][j] + " \t");
+        for (int[] ints : afterTranspose) {
+            for (int anInt : ints) {
+                System.out.print(anInt + " \t");
             }
             System.out.println();
         }
