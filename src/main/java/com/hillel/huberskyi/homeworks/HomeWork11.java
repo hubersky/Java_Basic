@@ -1,6 +1,5 @@
 package com.hillel.huberskyi.homeworks;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class HomeWork11 {
