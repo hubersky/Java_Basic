@@ -12,5 +12,12 @@ public class Main {
         secondUser.printAccountInfo();
         lastUser.printAccountInfo();
 
+        secondUser.setWeight(80.0);
+        secondUser.setPressure(120);
+        lastUser.setSurname("Leb");
+        lastUser.setNumberOfStepsPerDay(3678);
+        secondUser.printAccountInfo();
+        lastUser.printAccountInfo();
+
     }
 }
