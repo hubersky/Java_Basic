@@ -30,25 +30,21 @@ public class FitnessTracker {
     }
 
     protected void printAccountInfo() {
-        System.out.println(
-                "name='" + name + '\'' +
-                        ", day=" + day +
-                        ", month=" + month +
-                        ", year=" + year +
-                        ", age=" + age +
-                        ", email='" + email + '\'' +
-                        ", phone='" + phone + '\'' +
-                        ", surname='" + surname + '\'' +
-                        ", weight=" + weight +
-                        ", pressure=" + pressure +
-                        ", numberOfStepsPerDay=" + numberOfStepsPerDay);
-
+        System.out.println("Name: " + name + '\n' +
+                "Date Of Birth: " + day + ", " + month + ", " + year + '\n' +
+                "Age: " + age + '\n' +
+                "Email: " + email + '\n' +
+                "Phone: " + phone + '\n' +
+                "Surname: " + surname + '\n' +
+                "Weight: " + weight + '\n' +
+                "Pressure: " + pressure + '\n' +
+                "Number Of Steps Per Day: " + numberOfStepsPerDay + '\n');
     }
 
     private int countAge() {
         int currentYear = 2022;
         int result = currentYear - this.year;
-       return this.age = result;
+        return this.age = result;
     }
 
     public String getName() {
