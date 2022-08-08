@@ -19,31 +19,32 @@ public class Drinks {
         System.out.println("Choose the drinks please");
         String drink = scanner.nextLine();
         DrinksMachine drinksMachine = DrinksMachine.valueOf(drink.toUpperCase(Locale.ROOT));
-        switch (drinksMachine) {
-            case COFFEE:
-                coffee();
-                break;
-            case TEA:
-                tea();
-                break;
-            case LEMONADE:
-                lemonade();
-                break;
-            case MOJITO:
-                mojito();
-                break;
-            case MINERAL:
-                mineral();
-                break;
-            case COCA_COLA:
-                cocaCola();
-                break;
-        }
+            switch (drinksMachine) {
+                case COFFEE:
+                    coffee();
+                    break;
+                case TEA:
+                    tea();
+                    break;
+                case LEMONADE:
+                    lemonade();
+                    break;
+                case MOJITO:
+                    mojito();
+                    break;
+                case MINERAL:
+                    mineral();
+                    break;
+                case COCA_COLA:
+                    cocaCola();
+                    break;
+            }
         System.out.println("You would like to choose another drink ?");
         String choose = scanner.nextLine().toUpperCase(Locale.ROOT);
         if (choose.equals("YES")) {
             chooseDrink();
         }
+        scanner.close();
     }
 
     public int coffee() {
