@@ -44,12 +44,11 @@ public class Drinks {
             System.out.println("Wrong Data!");
             chooseDrink();
         }
-        System.out.println("You would like to choose another drink ?");
+        System.out.println("Would you like to choose another drink ?");
         String choose = scanner.nextLine().toUpperCase(Locale.ROOT);
         if (choose.equals("YES")) {
             chooseDrink();
         }
-        scanner.close();
     }
 
     public int coffee() {
