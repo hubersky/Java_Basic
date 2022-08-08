@@ -18,7 +18,8 @@ public class Drinks {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose the drinks please");
         String drink = scanner.nextLine();
-        DrinksMachine drinksMachine = DrinksMachine.valueOf(drink.toUpperCase(Locale.ROOT));
+        try {
+            DrinksMachine drinksMachine = DrinksMachine.valueOf(drink.toUpperCase(Locale.ROOT));
             switch (drinksMachine) {
                 case COFFEE:
                     coffee();
@@ -39,6 +40,10 @@ public class Drinks {
                     cocaCola();
                     break;
             }
+        } catch (IllegalArgumentException e) {
+            System.out.println("Wrong Data!");
+            chooseDrink();
+        }
         System.out.println("You would like to choose another drink ?");
         String choose = scanner.nextLine().toUpperCase(Locale.ROOT);
         if (choose.equals("YES")) {
