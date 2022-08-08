@@ -42,7 +42,6 @@ public class Drinks {
             }
         } catch (IllegalArgumentException e) {
             System.out.println("Wrong Data!");
-            chooseDrink();
         }
         System.out.println("Would you like to choose another drink ?");
         String choose = scanner.nextLine().toUpperCase(Locale.ROOT);
