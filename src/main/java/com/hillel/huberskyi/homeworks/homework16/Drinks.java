@@ -48,6 +48,7 @@ public class Drinks {
         if (choose.equals("YES")) {
             chooseDrink();
         }
+        scanner.close();
     }
 
     public int coffee() {
